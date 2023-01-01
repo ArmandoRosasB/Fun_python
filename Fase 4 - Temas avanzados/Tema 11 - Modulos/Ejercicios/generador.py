@@ -38,6 +38,7 @@ def generador():
 def main():
     lista = generador()
     print()
+    print()
     print(lista)
 
 
