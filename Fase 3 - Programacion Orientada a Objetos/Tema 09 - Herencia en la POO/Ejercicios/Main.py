@@ -1,7 +1,7 @@
-from Coche import *
-from Camioneta import *
-from Bicicleta import *
-from Motocicleta import *
+import Coche
+import Camioneta
+import Bicicleta
+import Motocicleta
 
 
 
@@ -21,10 +21,10 @@ def catalogar(vehiculos, ruedas = None):
 
 
 vehiculos = [
-    Coche("azul", 4, 150, 1200),
-    Camioneta("blanco", 4, 100, 1300, 1500),
-    Bicicleta("verde", 2, "urbana"),
-    Motocicleta("negro", 2, "deportiva", 180, 900)
+    Coche.Coche("azul", 4, 150, 1200),
+    Camioneta.Camioneta("blanco", 4, 100, 1300, 1500),
+    Bicicleta.Bicicleta("verde", 2, "urbana"),
+    Motocicleta.Motocicleta("negro", 2, "deportiva", 180, 900)
 ]
 
 print()

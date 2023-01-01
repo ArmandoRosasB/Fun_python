@@ -1,6 +1,6 @@
-from Vehiculo import *
+import Vehiculo
 
-class Coche(Vehiculo):
+class Coche(Vehiculo.Vehiculo):
     def __init__(self, color, ruedas, velocidad, cilindrada) -> None:
         super().__init__(color, ruedas)
         self._velocidad = velocidad
