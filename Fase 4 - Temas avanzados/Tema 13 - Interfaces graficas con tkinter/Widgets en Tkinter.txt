@@ -1,0 +1,14 @@
+Representan los componentes graficos en las interfaces y se
+gestionan formano jerarquias
+
+Tk -> Contenedor base o raiz de todos los widgets que forman la interfaz
+Frame -> Contenedor de otros widgets. Tamano propio. Posicionarse en distintos lugares
+Label -> Mostrar texto estatico
+Entry -> Escribir texto corto
+Text -> Escribir texto largo
+Button -> Boton con textoe
+Radiobutton -> Boton radial. Se usa en conjunto. Es posible marcar una opciom
+Checkbutton -> Boton cuadrado. Se puede marcar con una palomita.
+Menu -> Estructura de botones.
+Boxes -> Ventana emergente que permite mostrar informacion.
+Dialogs-> Ventana emergente que permite mostrar informacion.
