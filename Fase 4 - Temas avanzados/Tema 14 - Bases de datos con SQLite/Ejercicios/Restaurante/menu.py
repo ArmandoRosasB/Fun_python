@@ -11,7 +11,7 @@ root.resizable(False, False)
 top = Frame(root)
 top.pack()
 
-Label(top, text="           Mexicali's          ", fg='tomato3', font=('Times New Roman', 30, 'bold italic')).pack()
+Label(top, text="           Ramona's          ", fg='tomato3', font=('Times New Roman', 30, 'bold italic')).pack()
 Label(top, text="Menu del dia", fg='tomato2', font=('Times New Roman', 26, 'bold italic')).pack()
 Label(root, text="").pack()
 
