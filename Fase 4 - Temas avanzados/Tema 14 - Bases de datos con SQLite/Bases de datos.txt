@@ -1,0 +1,37 @@
+* Bases de datos *
+
+Conjuntos de datos pertenecientes a un mismo contexto.
+Almacenados sistematicamente con la finalidad de un posterior uso.
+
+Se suelen gestionar utilizando SGBD(Sistemas Gestores de Bases de Datos) que
+tiene sus propios lenguajes de programacion para manejarlos.
+
+
+** Modelos de BD **
+
+Jerarquicas - Arbol invertido: Nodo padre con nodos hijos
+De red - Un nodo hijo puede tener varios padres
+Transaccionales - Envio y recepcion de datos
+Relacionales - Abstraccion y administracion dinamica de datos
+Documentales - Guardar grandes volumenens de informacion
+Orientadas a objetos - lmacenar objetos completos
+Deductivas
+
+** BD relacionales **
+Crear relaciones enttre conjuntos logicos de datos
+
+Cada relacion es tambien una tabla
+
+Compuesta por registros (filas o tuplas) y campos (columnas)
+
+
+**SGBD Relacionales compatibles con el lenguaje Python**
+SQLServer
+Oracle
+MySQL
+PostgreSQL
+SQLite
+
+
+**SQL**
+Structured Query Language

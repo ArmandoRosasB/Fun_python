@@ -13,7 +13,6 @@ def new(root, mensaje, texto):
         ruta = ""
         texto.delete(1.0, "end")
         root.title("My editor")
-
     return
 
 

@@ -27,7 +27,7 @@ if __name__ == '__main__':
     # Caja de texto central
     texto = Text(root)
     texto.pack(fill="both", expand=1)
-    texto.config(width=70, height=20,bd = 0, padx=6, pady=4, font=("Consolas", 12), 
+    texto.config(width=75, height=20,bd = 0, padx=6, pady=4, font=("Consolas", 12), 
         selectbackground="HotPink1", background="grey27", foreground="white")
 
 
