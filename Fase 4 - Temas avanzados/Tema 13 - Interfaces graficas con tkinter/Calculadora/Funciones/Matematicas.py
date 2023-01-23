@@ -40,6 +40,16 @@ def dividir(n1, n2, r, error_message):
     finally:
         borrar(n1, n2)
 
+def potencia(n1, n2, r, error_message):
+    try:
+        r.set(float(n1.get()) ** float(n2.get()))
+    except ValueError:
+        error_message.set("Ingresa solo datos numericos") 
+    else:
+        error_message.set("")
+    finally:
+        borrar(n1, n2)
+
 def borrar(n1, n2):
     n1.set("")
     n2.set("")

@@ -1,0 +1,5 @@
+python -m pydoc file/package
+
+python -m pydoc -w file/package
+
+python -m pydoc -w package .\

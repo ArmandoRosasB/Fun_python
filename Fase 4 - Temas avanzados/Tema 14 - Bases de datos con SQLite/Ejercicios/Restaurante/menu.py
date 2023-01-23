@@ -1,9 +1,13 @@
 import sqlite3
 from tkinter import *
 
+nombreRestaurante = input('Ingresa el nombre de tu restaurante: ')
+titulo = "           " + nombreRestaurante + "           "
+
+precio = input("Ingresa el precio de tu menu: ")
 
 root = Tk()
-root.title("Mexicali's")
+root.title(nombreRestaurante)
 root.iconbitmap('meal.ico')
 
 root.resizable(False, False)
@@ -11,7 +15,8 @@ root.resizable(False, False)
 top = Frame(root)
 top.pack()
 
-Label(top, text="           Ramona's          ", fg='tomato3', font=('Times New Roman', 30, 'bold italic')).pack()
+# Nombre del restaurante
+Label(top, text= titulo, fg='tomato3', font=('Times New Roman', 30, 'bold italic')).pack()
 Label(top, text="Menu del dia", fg='tomato2', font=('Times New Roman', 26, 'bold italic')).pack()
 Label(root, text="").pack()
 
@@ -31,7 +36,8 @@ for categoria in categorias:
 
     Label(root, text="").pack()
 
-Label(root, text="$120 Incluye bebida", fg='tomato3', font=('Times New Roman', 16, 'bold italic') ).pack(anchor='se')
+# Costo del menu
+Label(root, text="$" + precio + " Incluye bebida", fg='tomato3', font=('Times New Roman', 16, 'bold italic') ).pack(anchor='se')
 
 
 root.config(highlightbackground='salmon', highlightcolor='salmon', highlightthickness=2, bd=0)

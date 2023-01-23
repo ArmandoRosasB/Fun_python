@@ -29,6 +29,7 @@ Button(frame2, text= "Sumar", command=lambda: sumar(n1, n2, r, error_message)).p
 Button(frame2, text= "Resta", command=lambda:  restar(n1, n2, r, error_message)).pack(side="left")
 Button(frame2, text= "Multiplicacion", command=lambda: multiplicar(n1, n2, r, error_message)).pack(side="left")
 Button(frame2, text= "Division", command=lambda: dividir(n1, n2, r, error_message)).pack(side="left")
+Button(frame2, text= "Potencia", command=lambda: potencia(n1, n2, r, error_message)).pack(side="left")
 
 frame3 = Frame(root)
 frame3.pack()
