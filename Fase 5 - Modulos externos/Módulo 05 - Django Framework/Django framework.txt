@@ -1,0 +1,50 @@
+settings.py
+Contiene todas las variables de configuracion de nuestro proyecto.
+
+Modulo y libreria utilizada para mapear rutas de archivos: form pathlib import Path
+
+BASE_DIR -> Guarda el directorio raiz del proyecto
+
+SECRET_KEY -> Se utiliza para tareas criptograficas y generacion de tokens
+
+DEBUG
+TRUE: Nos permite ver informacion de lso errores como respuesta a peticiones fallidas al servidor.
+
+Al momento de la produccion se tiene que poner en FALSE.
+Ademas, hay que configurar los hosts permitidos:
+	ALLOWED_HOSTS = [] Lista que contiene dominios o IP's que permitiremos ejecutar django
+	al desactivar DEBUG.
+
+
+INSTALLED_APPS -> Paquetes que contiene las diferentes funcionalidades de nuestro servidor
+
+MIDDLEWARE -> Funciones para manejar peticiones al servidor.
+
+TEMPLATES -> Se establece como django debe buscar y procesar las plantillas del proyecto.
+
+DATABASES -> Base de datos
+
+AUTH_PASSWORD_VALIDATORS -> Valida las claves de los usuarios
+
+STATIC_URL -> Permite controlar donde se van a guardar los ficheros estaticos de nuestro
+proyecto. Como ficheros CSS, JS, etc.
+
+
+urls.py
+Mapea las rutas que se escriben en el navegador de internet.
+Hace las peticiones al proyecto para devolver un resultado.
+
+Por defecto solo se configura la ruta admin
+
+urlpatterns = [
+	path('admin/', admin.site.urls),
+]
+
+wsgi.py
+Interfaz de puerta de enlace del servidor
+Ejecuta python en un servidor y lo deja en marcha
+
+asgi.py
+Interfaz de puerta de enlace del servidor con soporte asincrono
+Multiples ejecuciones en paralelo de nuestro mismo servicio
+
