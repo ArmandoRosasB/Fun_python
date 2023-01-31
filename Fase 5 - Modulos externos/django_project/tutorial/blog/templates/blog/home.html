@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+
+    {% for post in posts %} <!-- Ciclo for en HTML -->
+        <div>
+            <h3> {{ post.title }}</h3>
+            <p>{{ post.content|truncatewords:"20" }} <a href="{% url 'post' id=post.pk %}">Leer mas</a></p> <!-- Truncar palabras-->
+            
+        </div> </br>
+        
+    {% endfor %}
+
+    {% endblock %}
+    

@@ -14,7 +14,16 @@ Al guardarlo se escribira en la base de datos.
 '''
 
 class Post(models.Model):
-    title = models.CharField(max_length=200) # VARCHAR
-    content = models.TextField() # TEXT Longitud dinamica
-    created = models.DateTimeField(auto_now_add=True) # DATETIME
-    modified = models.DateTimeField(auto_now=True)
+    title = models.CharField(max_length=200, verbose_name= 'Titulo') # VARCHAR
+    content = models.TextField(verbose_name= 'Contenido') # TEXT Longitud dinamica
+    created = models.DateTimeField(auto_now_add=True, verbose_name= 'Creado') # DATETIME
+    modified = models.DateTimeField(auto_now=True, verbose_name= 'Modificado')
+
+    # En caso de querer traducir el nombre de clase
+    '''
+    class Meta:
+        verbose_name = 'Entrada'
+        verbose_name_plural = 'Entradas'
+    '''
+    def __str__(self) -> str:
+        return self.title

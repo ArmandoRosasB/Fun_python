@@ -1,3 +1,7 @@
+from django.conf.urls.static import static
+from django.conf import settings
+
+
 """tutorial URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,7 +19,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from blog.views import home, post
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('', home, name="home"),
+    path('blog/<id>', post, name="post"),
+] + static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
